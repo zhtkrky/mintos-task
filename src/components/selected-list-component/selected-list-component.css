@@ -1,0 +1,15 @@
+.selected-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  margin: 10px;
+  padding-bottom: 20px;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .selected-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}

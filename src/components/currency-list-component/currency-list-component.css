@@ -1,0 +1,15 @@
+/* three column grid */
+.currency-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  margin: 10px;
+}
+
+/* mobile two column grid */
+
+@media (max-width: 600px) {
+  .currency-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}

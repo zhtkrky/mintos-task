@@ -1,0 +1,20 @@
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 500px;
+  border: 2px solid #c8c8c8;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  border-radius: 5px;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .container {
+    width: 300px;
+  }
+}

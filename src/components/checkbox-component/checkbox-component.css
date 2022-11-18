@@ -1,0 +1,71 @@
+.input-wrapper {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 22px;
+  background-color: #ececec;
+  color: #1a406c;
+  border: 1px solid grey;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.input-wrapper-checked {
+  background-color: white;
+}
+
+/* Hide the browser's default radio button */
+.input-wrapper input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 9px;
+  left: 10px;
+  height: 16px;
+  width: 16px;
+  border-radius: 20%;
+  border: 1px solid #ccc;
+}
+
+/* On mouse-over, add a grey background color */
+.input-wrapper:hover {
+  background-color: #dcdcdc;
+}
+
+/* On mouse-over, add a white background color */
+.input-wrapper-checked:hover {
+  background-color: white;
+}
+
+/* Create the indicator (the X - hidden when not checked) */
+.checkmark:after {
+  content: "X";
+  color: red;
+  font-weight: bold;
+  font-size: 14px;
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (X) when checked */
+.input-wrapper input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (X) */
+.container .checkmark:after {
+  left: 2px;
+  top: -3px;
+  width: 5px;
+  height: 10px;
+  border-width: 0 3px 3px 0;
+}
